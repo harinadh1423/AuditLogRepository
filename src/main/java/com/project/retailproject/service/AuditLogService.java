@@ -1,17 +1,14 @@
 package com.project.retailproject.service;
 
-import com.project.retailproject.clients.UserClient;
 import com.project.retailproject.db.AuditLogRepository;
-//import com.project.retailproject.db.UserRepository;
 import com.project.retailproject.dto.AuditLogRequestDTO;
 import com.project.retailproject.dto.AuditLogResponseDTO;
-import com.project.retailproject.dto.UserResponseDTO;
+
 import com.project.retailproject.model.AuditLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-//import org.springframework.security.core.Authentication;
-//import org.springframework.security.core.context.SecurityContextHolder;
+
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -24,13 +21,7 @@ public class AuditLogService {
     @Autowired
     private AuditLogRepository auditLogRepository;
 
-//    @Autowired
-//    private UserClient userClient;
 
-
-//    public void log(String action) {
-//        log(action, getCurrentUsername());
-//    }
 
 
     public void log(AuditLogRequestDTO auditLogRequestDTO) {
@@ -45,13 +36,7 @@ public class AuditLogService {
     }
 
 
-//    public void logFailure(String action, String errorMessage) {
-//        log(action + "_FAILED | Error: " + errorMessage);
-//    }
 
-//    public void logFailure(String action, String errorMessage, String performedByEmail) {
-//        log(action + "_FAILED | Error: " + errorMessage, performedByEmail);
-//    }
 
 
     public AuditLogResponseDTO getAuditLogById(Long id) {

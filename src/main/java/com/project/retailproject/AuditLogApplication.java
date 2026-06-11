@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.project.retailproject.clients")
+@EnableFeignClients
 public class AuditLogApplication {
 
 	public static void main(String[] args) {

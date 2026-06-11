@@ -11,14 +11,34 @@ public class AuditLogResponseDTO {
     private String userName;
 
 
-    public Long getAuditId() { return auditId; }
-    public void setAuditId(Long auditId) { this.auditId = auditId; }
-    public String getAction() { return action; }
-    public void setAction(String action) { this.action = action; }
-    public LocalDateTime getTimeStamp() { return timeStamp; }
-    public void setTimeStamp(LocalDateTime timeStamp) { this.timeStamp = timeStamp; }
-    public Long getUserId() { return userId; }
-    public void setUserId(Long userId) { this.userId = userId; }
-    public String getUserName() { return userName; }
-    public void setUserName(String userName) { this.userName = userName; }
+    public Long getAuditId() {
+        return auditId;
+    }
+    public void setAuditId(Long auditId) {
+        this.auditId = auditId;
+    }
+    public String getAction() {
+        return action;
+    }
+    public void setAction(String action) {
+        this.action = action;
+    }
+    public LocalDateTime getTimeStamp() {
+        return timeStamp;
+    }
+    public void setTimeStamp(LocalDateTime timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+    public Long getUserId() {
+        return userId;
+    }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 }

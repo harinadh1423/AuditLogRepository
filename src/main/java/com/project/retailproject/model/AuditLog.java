@@ -23,7 +23,7 @@ public class AuditLog {
 
     private Long  userId;
 
-    @NotBlank(message = "Username is required")
+
     private String userName;
 
     public AuditLog() {}
@@ -64,13 +64,5 @@ public class AuditLog {
         this.userName = userName;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        AuditLog auditLog = (AuditLog) o;
-        return Objects.equals(auditId, auditLog.auditId);
-    }
 
-    @Override
-    public int hashCode() { return Objects.hash(auditId); }
 }
